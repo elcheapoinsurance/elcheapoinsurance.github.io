@@ -98,6 +98,8 @@ top: 14px;
 
 .wood-text {
   background: url(../images/wooden.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .arrow {
