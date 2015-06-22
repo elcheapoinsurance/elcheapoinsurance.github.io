@@ -1,0 +1,273 @@
+body {
+	background: url(../images/desert.jpg) no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+	width: 100%;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+
+.fa-phone {
+    color: red;
+}
+
+/*.carrier h2,
+#carousel-example-generic {
+    display: inline-block;
+}*/
+
+.circle-arrow {
+    margin-top: 230px;
+    padding-left: 50px;
+}
+
+.carrier {
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.lucha {
+	margin-top: 109px;
+
+}
+
+.title {
+	margin-top: 30px;
+}
+
+.bubble 
+{
+position: relative;
+width: 525px;
+height: 270px;
+padding: 0px;
+background: rgba(255, 255, 255, 0.5);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #000000 solid 5px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 0 10px 36px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+right: -36px;
+top: 18px;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 14px 0 14px 40px;
+border-color: transparent #000000;
+display: block;
+width: 0;
+z-index: 0;
+right: -45px;
+top: 14px;
+}
+
+.words {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+    font-size: 38px
+}
+
+.gum {
+	margin-left: 100px;
+	margin-top: 75px;
+}
+
+.abtSec {
+	color: white;
+}
+
+.ab-content {
+    padding: 150px 0;
+    font-size: 2.2em;
+}
+
+.wood-text {
+  background: url(../images/wooden.jpg) no-repeat;
+}
+
+.arrow {
+    margin-top: 40px;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+    transform: rotate(360deg);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/********** CAROUSEL ************/
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 35%; /*img width*/
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    margin-top: 90px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/*********************************************
+            BOUNCE EFFECT
+***********************************************/  
+
+.bounce {
+  position:relative;
+  font-family: 'Anton', sans-serif;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+  
+  25%, 75% {
+    bottom:15px;
+  }
+  
+  
+  50% {
+    bottom:20px;
+  }
+  
+  100% {
+    bottom:0;
+  }
+}
