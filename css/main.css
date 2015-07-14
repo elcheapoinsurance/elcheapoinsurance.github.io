@@ -1,10 +1,13 @@
 body {
 	background: url(../images/desert.jpg) no-repeat;
 	background-size: cover;
-    background-attachment: fixed;
+  background-attachment: fixed;
 	width: 100%;
-    font-family: 'Gloria Hallelujah', cursive;
-    
+  font-family: 'Gloria Hallelujah', cursive;  
+}
+
+.i-numb {
+  font-size: 20px;
 }
 
 .fa-phone {
@@ -92,7 +95,7 @@ top: 14px;
 }
 
 .ab-content {
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 70px 0;
     font-size: 2.2em;
 }
